@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/sroke_for_item_list"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back_item_list"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_list_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_for_item_list" />
+
+        <TextView
+            android:id="@+id/title_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/iv_list_item"
+            android:text="Title"
+            android:textColor="@color/colorH2"
+            android:textSize="18sp"
+            android:transitionName="animate_element"
+            android:fontFamily="@font/rubik" />
+
+        <TextView
+            android:id="@+id/date_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_list_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/iv_list_item"
+            android:text="19.11.2019"
+            android:textColor="@color/dopText"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

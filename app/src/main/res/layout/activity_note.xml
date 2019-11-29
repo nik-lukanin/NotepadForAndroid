@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/title_note"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:transitionName="animate_element"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textColor="@color/colorH1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B6B6B6"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:id="@+id/editor_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/rubik_light"
+        android:gravity="top|left"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorSimpleText"
+        android:textSize="18sp"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:text="" />
+</LinearLayout>

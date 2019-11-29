@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="main_activity_title">Write to not forget</string>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/rubik_light</item>
+        <item>@font/rubik_medium</item>
+    </array>
+</resources>

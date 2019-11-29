@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lukanin.notes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:name="com.orm.SugarApp"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data android:name="DATABASE" android:value="MainDataBase.db"/>
+        <meta-data android:name="VERSION" android:value="1"/>
+        <meta-data android:name="QUERY_LOG" android:value="true"/>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.lukanin.notes"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".listnotesscreen.ListNotesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".notescreen.NoteActivity"
+            android:label="Note"
+            android:parentActivityName=".listnotesscreen.ListNotesActivity" />
+    </application>
+
+</manifest>
